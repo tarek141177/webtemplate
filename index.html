@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{SITE_TITLE}} | {{SITE_NAME}}</title> <!-- عدل العنوان من المتغيرات -->
+    <meta name="description" content="{{SITE_DESCRIPTION}}" /> <!-- وصف موجز للموقع -->
+    <meta name="keywords" content="{{SITE_KEYWORDS}}" /> <!-- كلمات مفتاحية -->
+    <meta name="author" content="{{AUTHOR_NAME}}" /> <!-- اسم الشركة أو الشخص -->
+    <!-- أيقونة الموقع (favicon) -->
+    <link rel="icon" href="{{FAVICON_PATH}}" type="image/x-icon" /> <!-- عدل مسار الأيقونة -->
+    <!-- خطوط جوجل أو خطوط مخصصة -->
+    <link href="{{GOOGLE_FONTS_LINK}}" rel="stylesheet"> <!-- مثال: https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&display=swap -->
+    <link rel="stylesheet" href="{{STYLE_PATH}}" /> <!-- مسار ملف CSS -->
+    <!-- بيانات Schema.org (اختياري) -->
+    <!--
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "{{ORG_NAME}}",
+      "url": "{{ORG_URL}}",
+      "logo": "{{ORG_LOGO}}"
+    }
+    </script>
+    -->
+    <!-- يمكنك إضافة أي وسوم ميتا أو إعدادات أخرى هنا -->
+  </head>
+  <body>
+    <header class="site-header">
+        <div class="container">
+            <!-- شعار الموقع -->
+            <a href="/" class="logo"><img src="{{LOGO_PATH}}" alt="{{SITE_LOGO_ALT}}" style="height:40px;" /> <!-- مسار الشعار -->
+            </a>
+            <nav class="main-nav">
+                <a href="/">{{NAV_HOME}}</a>
+                <a href="/about.html">{{NAV_ABOUT}}</a>
+                <a href="/services.html">{{NAV_SERVICES}}</a>
+                <a href="/tools.html">{{NAV_TOOLS}}</a>
+                <a href="/contact.html">{{NAV_CONTACT}}</a>
+                <!-- أضف أو عدل الروابط حسب الحاجة -->
+            </nav>
+        </div>
+    </header>
+    <main class="container" style="margin-top:40px;">
+        <h1>{{PAGE_TITLE}}</h1> <!-- عنوان رئيسي للصفحة -->
+        <p class="lead">{{PAGE_DESCRIPTION}}</p> <!-- وصف موجز للصفحة -->
+        <!-- قسم أدوات أو خدمات -->
+        <section class="tool-section" style="margin-top:40px;">
+            <h2>{{TOOL_SECTION_TITLE}}</h2> <!-- اسم الأداة أو الخدمة -->
+            <p>{{TOOL_SECTION_DESCRIPTION}}</p> <!-- وصف الأداة أو الخدمة -->
+            <div class="tool-box" style="background:#fff;padding:20px;border-radius:8px;box-shadow:0 2px 8px #0001;max-width:600px;margin:auto;">
+                <!-- عنصر تفاعلي للأداة (يمكن تخصيصه) -->
+                <textarea placeholder="{{TOOL_TEXTAREA_PLACEHOLDER}}" style="width:100%;height:120px;margin-bottom:10px;"></textarea>
+                <button style="background:#0078d7;color:#fff;padding:10px 20px;border:none;border-radius:6px;cursor:pointer;">{{TOOL_BUTTON_TEXT}}</button>
+                <div class="result" style="margin-top:15px;background:#f1f1f1;padding:10px;border-radius:6px;min-height:40px;">{{TOOL_RESULT_PLACEHOLDER}}</div>
+            </div>
+        </section>
+        <!-- يمكنك تكرار أو حذف الأقسام حسب الحاجة -->
+        <section class="coming-soon" style="margin-top:50px;text-align:center;color:#888;">
+            <p>{{COMING_SOON_TEXT}}</p>
+        </section>
+    </main>
+    <footer class="site-footer" style="margin-top:60px;text-align:center;color:#888;font-size:15px;">
+        <!-- نص الحقوق أو أي معلومات إضافية -->
+        {{FOOTER_TEXT}}
+    </footer>
+    <!-- كود جافاسكريبت خاص بالصفحة أو الأداة (اختياري) -->
+    <script>
+    // يمكنك إضافة كود جافاسكريبت مخصص هنا
+    </script>
+  </body>
+</html>
+<!--
+ملاحظات:
+- جميع المتغيرات بين {{}} يجب استبدالها عند الاستخدام.
+- تم وضع تعليقات في أماكن التخصيص المهمة.
+- يمكنك إضافة أو حذف أقسام أو عناصر حسب الحاجة.
+-->

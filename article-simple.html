@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ARTICLE_TITLE}} | {{SITE_NAME}}</title> <!-- عنوان المقال -->
+    <meta name="description" content="{{ARTICLE_DESCRIPTION}}"> <!-- وصف المقال -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #34495e;
+            border-right: 4px solid #3498db;
+            padding-right: 10px;
+        }
+        h3 {
+            color: #2980b9;
+        }
+        .meta {
+            text-align: center;
+            color: #7f8c8d;
+            margin-bottom: 20px;
+            font-style: italic;
+        }
+        .highlight {
+            background: #ecf0f1;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+            border-right: 4px solid #e74c3c;
+        }
+        .cta {
+            background: #27ae60;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            border-radius: 10px;
+            margin: 30px 0;
+        }
+        .cta a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        ul, ol {
+            margin: 15px 0;
+            padding-right: 20px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        strong {
+            color: #2c3e50;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #bdc3c7;
+            color: #7f8c8d;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>{{ARTICLE_TITLE}}</h1> <!-- عنوان المقال -->
+        <div class="meta">
+            <strong>{{ARTICLE_AUTHOR_LABEL}}</strong> {{ARTICLE_AUTHOR}} | 
+            <strong>{{ARTICLE_DATE_LABEL}}</strong> {{ARTICLE_DATE}} | 
+            <strong>{{ARTICLE_CATEGORY_LABEL}}</strong> {{ARTICLE_CATEGORY}}
+        </div>
+        <h2>{{INTRO_HEADING}}</h2>
+        <p>{{INTRO_PARAGRAPH}}</p>
+        <div class="highlight">
+            <h3>{{HIGHLIGHT_HEADING_1}}</h3>
+            <p>{{HIGHLIGHT_PARAGRAPH_1}}</p>
+            <p><strong>{{HIGHLIGHT_LIST_TITLE_1}}</strong></p>
+            <ul>
+                <li>{{HIGHLIGHT_LIST_ITEM_1_1}}</li>
+                <li>{{HIGHLIGHT_LIST_ITEM_1_2}}</li>
+                <li>{{HIGHLIGHT_LIST_ITEM_1_3}}</li>
+                <li>{{HIGHLIGHT_LIST_ITEM_1_4}}</li>
+                <li>{{HIGHLIGHT_LIST_ITEM_1_5}}</li>
+            </ul>
+        </div>
+        <h2>{{WHY_PEOPLE_SEARCH_HEADING}}</h2>
+        <p>{{WHY_PEOPLE_SEARCH_PARAGRAPH}}</p>
+        <ul>
+            <li>{{WHY_PEOPLE_SEARCH_ITEM_1}}</li>
+            <li>{{WHY_PEOPLE_SEARCH_ITEM_2}}</li>
+            <li>{{WHY_PEOPLE_SEARCH_ITEM_3}}</li>
+            <li>{{WHY_PEOPLE_SEARCH_ITEM_4}}</li>
+            <li>{{WHY_PEOPLE_SEARCH_ITEM_5}}</li>
+        </ul>
+        <h2>{{HOW_TO_BE_THE_BEST_HEADING}}</h2>
+        <h3>{{TIP_1_HEADING}}</h3>
+        <p>{{TIP_1_PARAGRAPH}}</p>
+        <ul>
+            <li>{{TIP_1_ITEM_1}}</li>
+            <li>{{TIP_1_ITEM_2}}</li>
+            <li>{{TIP_1_ITEM_3}}</li>
+            <li>{{TIP_1_ITEM_4}}</li>
+            <li>{{TIP_1_ITEM_5}}</li>
+        </ul>
+        <h3>{{TIP_2_HEADING}}</h3>
+        <p>{{TIP_2_PARAGRAPH}}</p>
+        <ul>
+            <li>{{TIP_2_ITEM_1}}</li>
+            <li>{{TIP_2_ITEM_2}}</li>
+            <li>{{TIP_2_ITEM_3}}</li>
+            <li>{{TIP_2_ITEM_4}}</li>
+            <li>{{TIP_2_ITEM_5}}</li>
+            <li>{{TIP_2_ITEM_6}}</li>
+        </ul>
+        <h3>{{TIP_3_HEADING}}</h3>
+        <p>{{TIP_3_PARAGRAPH}}</p>
+        <ul>
+            <li>{{TIP_3_ITEM_1}}</li>
+            <li>{{TIP_3_ITEM_2}}</li>
+            <li>{{TIP_3_ITEM_3}}</li>
+            <li>{{TIP_3_ITEM_4}}</li>
+            <li>{{TIP_3_ITEM_5}}</li>
+        </ul>
+        <h2>{{SUCCESS_STORIES_HEADING}}</h2>
+        <!-- قصة نجاح 1 -->
+        <div class="highlight">
+            <h4>{{SUCCESS_STORY_1_TITLE}}</h4>
+            <p>{{SUCCESS_STORY_1_PARAGRAPH}}</p>
+            <ul>
+                <li>{{SUCCESS_STORY_1_ITEM_1}}</li>
+                <li>{{SUCCESS_STORY_1_ITEM_2}}</li>
+                <li>{{SUCCESS_STORY_1_ITEM_3}}</li>
+                <li>{{SUCCESS_STORY_1_ITEM_4}}</li>
+            </ul>
+        </div>
+        <!-- قصة نجاح 2 -->
+        <div class="highlight">
+            <h4>{{SUCCESS_STORY_2_TITLE}}</h4>
+            <p>{{SUCCESS_STORY_2_PARAGRAPH}}</p>
+            <ul>
+                <li>{{SUCCESS_STORY_2_ITEM_1}}</li>
+                <li>{{SUCCESS_STORY_2_ITEM_2}}</li>
+                <li>{{SUCCESS_STORY_2_ITEM_3}}</li>
+            </ul>
+        </div>
+        <h2>{{FAQ_HEADING}}</h2>
+        <h3>{{FAQ_1_QUESTION}}</h3>
+        <p>{{FAQ_1_ANSWER}}</p>
+        <h3>{{FAQ_2_QUESTION}}</h3>
+        <p>{{FAQ_2_ANSWER}}</p>
+        <h3>{{FAQ_3_QUESTION}}</h3>
+        <p>{{FAQ_3_ANSWER}}</p>
+        <div class="cta">
+            <h2>{{CTA_HEADING}}</h2>
+            <p>{{CTA_PARAGRAPH}}</p>
+            <a href="{{CTA_LINK}}">{{CTA_LINK_TEXT}}</a>
+        </div>
+        <h2>{{SUMMARY_HEADING}}</h2>
+        <p>{{SUMMARY_PARAGRAPH_1}}</p>
+        <ul>
+            <li>{{SUMMARY_ITEM_1}}</li>
+            <li>{{SUMMARY_ITEM_2}}</li>
+            <li>{{SUMMARY_ITEM_3}}</li>
+            <li>{{SUMMARY_ITEM_4}}</li>
+            <li>{{SUMMARY_ITEM_5}}</li>
+            <li>{{SUMMARY_ITEM_6}}</li>
+        </ul>
+        <p>{{SUMMARY_PARAGRAPH_2}}</p>
+        <p><strong>{{SUMMARY_PARAGRAPH_3}}</strong></p>
+        <div class="footer">
+            <p><strong>{{FOOTER_COMPANY_NAME}}</strong> - {{FOOTER_COMPANY_DESC}}</p>
+            <p>{{FOOTER_PHONE}} | {{FOOTER_EMAIL}}</p>
+            <p>🌐 <a href="{{FOOTER_WEBSITE}}">{{FOOTER_WEBSITE_TEXT}}</a></p>
+        </div>
+    </div>
+</body>
+</html>
+<!--
+ملاحظات:
+- جميع المتغيرات بين {{}} يجب استبدالها عند الاستخدام.
+- تم وضع تعليقات في أماكن التخصيص المهمة.
+- يمكنك إضافة أو حذف أقسام أو عناصر حسب الحاجة.
+-->

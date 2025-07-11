@@ -1,0 +1,12 @@
+{
+  "name": "site-template",
+  "version": "1.0.0",
+  "description": "قالب عام لموقع ويب مع متغيرات قابلة للتخصيص.",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "vite",
+    "build": "vite build"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}
